@@ -24,14 +24,14 @@ elif sys.version_info[1] == 7:
     INSTALL_PYTHON_REQUIRES.append(django_python_version_install)
 elif sys.version_info[1] == 8:
     # py3.8 is 2.2.8 < 3.1 (likely will be <4.0)
-    django_python_version_install = 'Django>=2.2.8,<3.2'
+    django_python_version_install = 'Django>=2.2.8,<=3.2'
     INSTALL_PYTHON_REQUIRES.append(django_python_version_install)
 
 setup(
 
     # Basic package information:
     name='django-twilio',
-    version='0.13.1.post0',
+    version='0.13.2',
     packages=find_packages(),
 
     # Packaging options:
